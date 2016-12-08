@@ -23,7 +23,7 @@ $(document).ready(function() {
     function queryData() {
         var selected = $(this).text();
         console.log("selected= " + selected);
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             selected + "&api_key=dc6zaTOxFJmzC&limit=10";
         $.ajax({
                 url: queryURL,
